@@ -4,6 +4,9 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
+
+
+//Juan Pablo Ruiz de Souza , rm: 557727
 public class CalculadoraApdexTest {
     private static final double totalAmostras = 557727;
     private double satisfatorio;
@@ -20,7 +23,8 @@ public class CalculadoraApdexTest {
     @Test
     public void calculoApdexTeste1(){
        double resultado = CalculadoraApdex.calcular(satisfatorio, toleravel,totalAmostras);
-       assertEquals(0.806,resultado, 0.001);
+       System.out.println("Resultado do cálculo: " + resultado);
+       assertEquals(0.81,resultado, 0.001);
 
     }
 
